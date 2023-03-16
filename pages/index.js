@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+// import Layout from '../components/Layout';
 import Banner from '../components/Banner';
 import WeedingInfo from '../components/WeedingInfo';
 import OwnersInfo from '../components/OwnersInfo';
@@ -12,7 +12,7 @@ import styles from '../styles/utils.module.scss';
 
 export default function Home() {
   return (
-    <Layout>
+    <div>
       <Banner />
       <div className={styles.sectionBackground}>
         <WeedingInfo />
@@ -25,6 +25,6 @@ export default function Home() {
         <Address />
         <AccountInfo />
       </div>
-    </Layout>
+    </div>
   );
 }
