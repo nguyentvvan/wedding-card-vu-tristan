@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import utilStyles from '../styles/utils.module.scss';
 
 export default function Post() {
