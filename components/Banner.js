@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-import SnowFall from './snowFall';
+import SnowFall from './SnowFall';
 import getImageURL from '../helpers/getImageURL';
 
 import styles from './Banner.module.scss';
