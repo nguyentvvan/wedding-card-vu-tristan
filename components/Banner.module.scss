@@ -1,0 +1,36 @@
+@import '../styles/base';
+
+.banner {
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  @include media-breakpoint-down(md) {
+    height: 350px;
+  }
+  @include media-breakpoint-down(sm) {
+    height: 280px;
+  }
+  @media (max-width: 400px) {
+    height: 200px;
+  }
+  .bannerImage {
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .bannerInfo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    .ringImage {
+      width: 77px;
+    }
+  }
+}

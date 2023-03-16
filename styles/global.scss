@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Questrial, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}

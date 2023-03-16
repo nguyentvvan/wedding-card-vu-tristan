@@ -1,26 +1,19 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+import styles from './Layout.module.scss';
 
-const name = 'Your Name';
-export const siteTitle = 'Next.js Sample Website';
+const siteTitle = 'Quyen Tran - Yuki';
 
 export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
+    <div className={styles.contentWrapper}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.svg" />
         <meta
           name="description"
           content="Wedding card Quyen Tran - Yuki"
         />
         <title>{siteTitle}</title>
       </Head>
-      <header className={styles.header}>
-        <div>Header</div>
-      </header>
       <main>{children}</main>
     </div>
   );
