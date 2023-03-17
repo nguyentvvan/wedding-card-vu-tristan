@@ -21,7 +21,6 @@ export default function Home() {
       </div>
       <div className={styles.sectionBackground}>
         <GreatestMoments />
-        <Events />
         <Address />
         <AccountInfo />
       </div>

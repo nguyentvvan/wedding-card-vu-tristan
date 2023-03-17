@@ -4,8 +4,8 @@ import getImageURL from '../helpers/getImageURL';
 import styles from '../styles/utils.module.scss';
 
 const data = {
-	coupleImage: 'banner.jpeg',
-	weddingCardImage: 'wedding-card.png',
+	coupleImage: 'passport.jpg',
+	weddingCardImage: 'wedding-card-passport.jpg',
 };
 
 export default function WeedingInfo() {
@@ -20,7 +20,7 @@ export default function WeedingInfo() {
 					</div>
 				</div>
 				<div className="col-xs-12 col-sm-12 col-md-7 col-lg-7 pt-md-0 px-3 pt-4">
-					<img className='w-100' src={getImageURL(data.weddingCardImage)} alt='wedding-card' />
+					<img className={styles.weddingCard} src={getImageURL(data.weddingCardImage)} alt='wedding-card' />
 				</div>
 			</div>
 		</div>

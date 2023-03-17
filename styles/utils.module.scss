@@ -9,6 +9,8 @@
 .contentWrapper {
   width: 70%;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .coupleImage {
@@ -39,6 +41,11 @@
   @include media-breakpoint-up(xxl) {
     height: 735px;
   }
+}
+
+.weddingCard {
+  width: 100%;
+  border-radius: 20px;
 }
 
 .heading2Xl {

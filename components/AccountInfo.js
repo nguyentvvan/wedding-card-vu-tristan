@@ -11,9 +11,7 @@ const data = {
 export default function AccountInfo() {
 	return (
 		<div className={clsx("row pt-5", utilStyles.contentWrapper)}>
-			<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mt-4">
-				<img className={styles.offerImage} src={getImageURL(data.offerImage)} alt='would you come?' />
-			</div>
+			<p className='mt-2'><strong>Gửi lời chúc đến đôi uyên ương</strong></p>
 		</div>
 	)
 }

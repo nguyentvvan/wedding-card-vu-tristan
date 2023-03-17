@@ -6,8 +6,9 @@ import getImageURL from '../helpers/getImageURL';
 import styles from './Banner.module.scss';
 
 const data = {
+	// bannerImage: 'quyen-tran-banner.jpg',
 	bannerImage: 'banner.jpeg',
-	dateTime: 'Vào hồi, 09:00 – thứ 4 ngày 06 tháng 09 năm 2023',
+	dateTime: 'Vào hồi, 18:00 – thứ 5 ngày 06 tháng 04 năm 2023',
 	ring: 'ring.png',
 	bride: 'BẢO TRÂN',
 	groom: 'VĂN QUYỀN',
