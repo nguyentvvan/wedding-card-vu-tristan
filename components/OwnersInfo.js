@@ -7,9 +7,9 @@ import styles from './OwnersInfo.module.scss';
 const data = {
 	namesImage: 'names.png',
 	// groomImage: 'groom.png',
-	groomImage: 'quyen.png',
+	groomImage: 'quyen-1.png',
 	// brideImage: 'bride.png',
-	brideImage: 'tran.png',
+	brideImage: 'tran-1.png',
 };
 
 export default function OwnersInfo() {
@@ -25,7 +25,6 @@ export default function OwnersInfo() {
 					<div className="px-4">
 						<small>ÚT NAM</small>
 						<div className={styles.ownerSharing}>
-							<h6 className="fw-bold">NGUYỄN VĂN QUYỀN</h6>
 							<h6 className="fw-bold">NHÀ TRAI</h6>
 							<div><strong>Mẹ: </strong>Lê Thị Hồng Hạnh</div>
 							<div><strong>&nbsp;</strong>&nbsp;</div>
@@ -37,7 +36,6 @@ export default function OwnersInfo() {
 					<div className="px-4">
 						<small>THỨ NỮ</small>
 						<div className={styles.ownerSharing}>
-							<h6 className="fw-bold">THIỀU BẢO TRÂN</h6>
 							<h6 className="fw-bold">NHÀ GÁI</h6>
 							<div><strong>Bố: </strong>Thiều Hoà</div>
 							<div><strong>Mẹ: </strong>Phan Thị Bê</div>
