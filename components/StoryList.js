@@ -37,11 +37,11 @@ export default function StoryList() {
 					</div>
 				</div>
 				<div className="row my-3">
-					<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center text-center">
+					<div className="order-2 order-sm-1 col-xs-6 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center text-center">
 						<div><strong>{data.storyPlace2}</strong></div>
 						<div><i>{data.storyText2}</i></div>
 					</div>
-					<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div className="order-1 order-sm-2 col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage2)} alt='love story' />
 					</div>
 				</div>
@@ -55,11 +55,11 @@ export default function StoryList() {
 					</div>
 				</div>
 				<div className="row my-3">
-					<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center text-center">
+					<div className="order-2 order-sm-1 col-xs-6 col-sm-6 col-md-6 col-lg-6 d-flex flex-column justify-content-center text-center">
 						<div><strong>{data.storyPlace4}</strong></div>
 						<div><i>{data.storyText4}</i></div>
 					</div>
-					<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+					<div className="order-1 order-sm-2 col-xs-6 col-sm-6 col-md-6 col-lg-6">
 						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage4)} alt='love story' />
 					</div>
 				</div>
