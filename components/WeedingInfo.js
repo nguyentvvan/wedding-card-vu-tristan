@@ -23,6 +23,7 @@ export default function WeedingInfo() {
 					<img className={styles.weddingCard} src={getImageURL(data.weddingCardImage)} alt='wedding-card' />
 				</div>
 			</div>
+			<div className={styles.verticalLine}></div>
 		</div>
 	)
 }

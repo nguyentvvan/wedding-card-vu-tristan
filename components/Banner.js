@@ -7,7 +7,8 @@ import styles from './Banner.module.scss';
 
 const data = {
 	// bannerImage: 'quyen-tran-banner.jpg',
-	bannerImage: 'banner.jpeg',
+	// bannerImage: 'banner.jpeg',
+	bannerImage: 'banner-1.jpg',
 	dateTime: 'Vào hồi, 18:00 – thứ 5 ngày 06 tháng 04 năm 2023',
 	ring: 'ring.png',
 	bride: 'BẢO TRÂN',
