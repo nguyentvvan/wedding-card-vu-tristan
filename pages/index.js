@@ -20,7 +20,7 @@ export default function Home() {
         <StoryList />
       </div>
       <div className={styles.sectionBackground}>
-        <GreatestMoments />
+        {/* <GreatestMoments /> */}
         <Address />
         <AccountInfo />
       </div>
