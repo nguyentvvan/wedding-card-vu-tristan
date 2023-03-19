@@ -2,7 +2,6 @@ import clsx from "clsx";
 import getImageURL from "../helpers/getImageURL";
 
 import utilStyles from '../styles/utils.module.scss';
-import styles from './AccountInfo.module.scss';
 
 const data = {
 	offerImage: 'offer.png',

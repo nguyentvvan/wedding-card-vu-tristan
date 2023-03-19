@@ -30,7 +30,13 @@
     right: 0;
     z-index: 1;
     .ringImage {
-      width: 77px;
+      width: 90px;
+      @include media-breakpoint-down(sm) { // < 576px
+        width: 60px;
+      }
+      @media (max-width: 400px) {
+        width: 40px;
+      }
     }
   }
 }

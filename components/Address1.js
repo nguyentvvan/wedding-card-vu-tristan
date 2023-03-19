@@ -11,8 +11,8 @@ const data = {
 export default function Address1() {
 	return (
 		<div className={clsx("row pt-5",styles.address, utilStyles.contentWrapper)}>
-			<div class="row address-info mb-4 m-auto">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div className="row address-info mb-4 m-auto">
+				<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p className='text-green-700'><strong>HÔN LỄ CỦA CHÚNG MÌNH SẼ ĐƯỢC TỔ CHỨC VÀO LÚC:</strong></p>
 					<p>18 GIỜ 00 – NGÀY 06 THÁNG 04 NĂM 2023</p>
 					<p>Tại: Sảnh IRIS, Maison De Charme</p>
@@ -22,7 +22,7 @@ export default function Address1() {
 			</div>
 			<div className={styles.mapouter}>
 				<div className={styles.gmapCanvas}>
-					<iframe title='Address' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=maison de charm quan 7&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<iframe title='Address' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=maison de charm quan 7&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
 				</div>
 			</div>
 		</div>

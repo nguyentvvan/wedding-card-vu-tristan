@@ -31,12 +31,16 @@
     margin-left: 0;
   }
   @include media-breakpoint-down(sm) { // < 576px
-    height: 400px;
+    height: 380px;
     margin-top: -140px;
   }
   @media (max-width: 400px) { // < 400px
     height: 300px;
     margin-top: -70px;
+  }
+  @media (max-width: 270px) { // < 330px
+    height: 200px;
+    margin-top: -40px;
   }
   @include media-breakpoint-up(xxl) { // > 1400px
     height: 735px;
@@ -50,11 +54,10 @@
 }
 
 .verticalLine {
-  width: 4px;
+  width: 3px;
   height: 70px;
-  background: black;
+  background-color: pink;
   margin: auto;
-  margin-top: 20px;
 }
 
 .sectionText {
@@ -64,58 +67,5 @@
 
 .thankYouText {
   font-family: 'Dancing Script', sans-serif;
-  font-size: 45px;
-}
-
-.heading2Xl {
-  font-size: 2.5rem;
-  line-height: 1.2;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
-}
-
-.headingXl {
-  font-size: 2rem;
-  line-height: 1.3;
-  font-weight: 800;
-  letter-spacing: -0.05rem;
-  margin: 1rem 0;
-}
-
-.headingLg {
-  font-size: 1.5rem;
-  line-height: 1.4;
-  margin: 1rem 0;
-}
-
-.headingMd {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-.borderCircle {
-  border-radius: 9999px;
-}
-
-.colorInherit {
-  color: inherit;
-}
-
-.padding1px {
-  padding-top: 1px;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.listItem {
-  margin: 0 0 1.25rem;
-}
-
-.lightText {
-  color: #666;
+  font-size: 3rem;
 }

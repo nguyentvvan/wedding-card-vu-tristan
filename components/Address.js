@@ -14,11 +14,11 @@ export default function Address() {
 	return (
 		<div className={clsx("row m-0", styles.address)}>
 			<div className={clsx("col-xs-12 col-sm-12 col-md-6 col-lg-6")}>
-				<div className={clsx("d-flex flex-column align-items-center", styles.addressSection, styles.calendar)}>
+				<div className={clsx("revealLeft d-flex flex-column align-items-center", styles.addressSection, styles.calendar)}>
 					<h4 className={clsx("text-center py-3", utilStyles.sectionText)}>Chúng mình cưới</h4>
 					<p>Một lời chúc của bạn chắc chắn sẽ làm cho đám cưới của chúng tôi có thêm một niềm hạnh phúc</p>
 					<img className={clsx("w-75 object-fit-cover", styles.calendarImage)} src={getImageURL(data.calendarImage)} alt="calendar" />
-					<h3 className={clsx("text-center", utilStyles.sectionText)}>
+					<h3 className={clsx("fs-1 text-center", utilStyles.sectionText)}>
 						<div>Thứ 5</div>
 						<div>
 							06/04/2023
@@ -27,7 +27,7 @@ export default function Address() {
 				</div>
 			</div>
 			<div className={clsx("col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 mt-md-0")}>
-				<div className={clsx("d-flex flex-column", styles.addressSection)}>
+				<div className={clsx("revealRight d-flex flex-column", styles.addressSection)}>
 					<div className={clsx("d-flex", styles.schedule)}>
 						<div className="d-flex align-items-center">
 							<div>

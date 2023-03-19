@@ -1,4 +1,5 @@
 import clsx from "clsx";
+
 import getImageURL from "../helpers/getImageURL";
 
 import utilStyles from '../styles/utils.module.scss';
@@ -31,54 +32,54 @@ export default function StoryList() {
 				<img className="w-100" src={getImageURL(data.loveStoryImage)} alt='loves' />
 			</div>
 			<h3 className={clsx("text-center", utilStyles.sectionText)}>
-				CÂU CHUYỆN TÌNH YÊU
+				Câu Chuyện Tình Yêu
 			</h3>
 			<div className="">
 				<div className="row my-4">
-					<div className="col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
+					<div className="revealLeft col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
 						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage1)} alt='love story' />
 					</div>
-					<div className="col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
+					<div className="revealDown col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine1)} alt='love story' />
 					</div>
-					<div className="fs-6 fs-sm-4 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
+					<div className="revealRight fs-6 fs-sm-4 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
 						<div><strong>{data.storyPlace1}</strong></div>
 						<div><i>{data.storyText1}</i></div>
 					</div>
 				</div>
 				<div className="row my-3">
-					<div className="order-3 order-sm-1 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
+					<div className="revealLeft order-3 order-sm-1 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
 						<div><strong>{data.storyPlace2}</strong></div>
 						<div><i>{data.storyText2}</i></div>
 					</div>
-					<div className="col-xs-0 order-2 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
+					<div className="revealDown col-xs-0 order-2 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine2)} alt='love story' />
 					</div>
-					<div className="order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
+					<div className="revealRight order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
 						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage2)} alt='love story' />
 					</div>
 				</div>
 				<div className="row my-3">
-					<div className="col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
+					<div className="revealLeft col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
 						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage3)} alt='love story' />
 					</div>
-					<div className="col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
+					<div className="revealDown col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine3)} alt='love story' />
 					</div>
-					<div className="col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
+					<div className="revealRight col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
 						<div><strong>{data.storyPlace3}</strong></div>
 						<div><i>{data.storyText3}</i></div>
 					</div>
 				</div>
 				<div className="row my-3">
-					<div className="order-3 order-sm-1 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
+					<div className="revealLeft order-3 order-sm-1 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center">
 						<div><strong>{data.storyPlace4}</strong></div>
 						<div><i>{data.storyText4}</i></div>
 					</div>
-					<div className="col-xs-0 order-2 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
+					<div className="revealDown col-xs-0 order-2 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine4)} alt='love story' />
 					</div>
-					<div className="order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
+					<div className="revealRight order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
 						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage4)} alt='love story' />
 					</div>
 				</div>

@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import SnowFall from './SnowFall';
 import getImageURL from '../helpers/getImageURL';
 
+import utilStyles from '../styles/utils.module.scss';
 import styles from './Banner.module.scss';
 
 const data = {
@@ -24,15 +25,26 @@ export default function Banner() {
 					alt=''
 				/>
 			</div>
-			<div className={clsx('h-100 col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-start justify-content-md-center align-items-center align-items-md-start pt-2 pt-md-0', styles.bannerInfo)}>
+			<div className={clsx('h-100 col-xs-12 col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-start justify-content-md-center align-items-center align-items-md-start pt-sm-5 pt-2 pt-md-0', styles.bannerInfo)}>
 				<h5 className={'date-time text-center text-md-start'}>
 					{data.dateTime}
 				</h5>
-				<h4 className='owners '>
+
+				<h4 className={clsx("fs-1 d-block d-md-none pt-2", utilStyles.sectionText)}>
 					{data.bride}
 					<img className={styles.ringImage} src={getImageURL(data.ring)} alt="ring" />
 					{data.groom}
 				</h4>
+
+				<div className="d-none d-md-flex flex-column w-75">
+					<div className={clsx("fs-1 align-self-start", utilStyles.sectionText)}>
+						{data.bride}
+					</div>
+					<img className={clsx("align-self-center", styles.ringImage)} src={getImageURL(data.ring)} alt="ring" />
+					<div className={clsx("fs-1 align-self-end", utilStyles.sectionText)}>
+						{data.groom}
+					</div>
+				</div>
 			</div>
 			<SnowFall />
 		</div>

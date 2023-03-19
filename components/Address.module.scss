@@ -7,7 +7,6 @@
 	background: url(../public/images/address-bg.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	grid-auto-rows: 1fr;
 }
 .addressSection {
 	height: 100%;
@@ -15,7 +14,7 @@
 	padding: 20px 15px 20px 15px;
 	border-radius: 8px;
 	box-shadow: 0 3px 6px -4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-	@include media-breakpoint-down(md) { // < 576px
+	@include media-breakpoint-down(sm) { // < 576px
     height: auto;
   }
 }
@@ -35,6 +34,9 @@
 }
 .scheduleImage {
 	width: 90px;
+	@media (max-width: 400px) {
+		width: 70px;
+	}
 }
 .gmapCanvas {
 	overflow: hidden;

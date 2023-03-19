@@ -1,0 +1,45 @@
+@import '../styles/base';
+
+.loveMessages {
+	background: url(../public/images/message-form-bg.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 10px 30px 10px;
+	width: 100%;
+}
+
+.messageSection {
+	height: 100%;
+	background-color: rgba(251, 224, 227, 0.349);
+	padding: 20px 15px 0 15px;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px -4px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+	@include media-breakpoint-down(sm) { // < 576px
+    height: auto;
+  }
+}
+
+.messageForm {
+	background: rgba(251, 224, 227, 0.6);
+}
+
+.messageButton {
+	background: rgb(233, 183, 192);
+	padding: 10px 40px;
+	border: 1px solid transparent;
+	border-radius: 8px;
+	margin-bottom: 15px;
+	transition: all .3s ease-in;
+	color: red;
+	&:hover {
+		background: rgb(233, 183, 192);
+		border: 1px solid red;
+	}
+}
+
+.sentMessage {
+	border-radius: 8px;
+	background: white;
+	margin-bottom: 20px;
+	padding: 15px;
+}

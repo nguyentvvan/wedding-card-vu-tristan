@@ -23,6 +23,9 @@ body {
   @media (max-width: 400px) {
     font-size: 15px;
   }
+  @media (max-width: 270px) { // < 330px
+    font-size: 10px;
+  }
 }
 
 * {
@@ -34,4 +37,41 @@ body {
 a {
   color: #0070f3;
   text-decoration: none;
+}
+
+// showing animations
+.revealUp,
+.revealRight,
+.revealDown,
+.revealLeft {
+  position: relative;
+  opacity: 0;
+  transition: 1s all ease;
+  &.active {
+    opacity: 1;
+  }
+}
+.revealUp{
+  transform: translateY(150px);
+  &.active{
+    transform: translateY(0);
+  }
+}
+.revealDown{
+  transform: translateY(-150px);
+  &.active{
+    transform: translateY(0);
+  }
+}
+.revealRight{
+  transform: translateX(150px);
+  &.active{
+    transform: translateX(0);
+  }
+}
+.revealLeft{
+  transform: translateX(-150px);
+  &.active{
+    transform: translateX(0);
+  }
 }
