@@ -1,7 +1,7 @@
 @import 'base';
 
 .sectionBackground {
-  background: url(/images/section-bg.jpeg);
+  // background: url(/images/section-bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -21,24 +21,24 @@
   position: absolute;
   z-index: 3;
   margin-left: 30px;
-  @include media-breakpoint-down(lg) {
+  @include media-breakpoint-down(lg) { // < 992px
     height: 585px;
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(md) { // < 768px
     height: 505px;
     position: relative;
     margin-top: -180px;
     margin-left: 0;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(sm) { // < 576px
     height: 400px;
     margin-top: -140px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 400px) { // < 400px
     height: 300px;
     margin-top: -70px;
   }
-  @include media-breakpoint-up(xxl) {
+  @include media-breakpoint-up(xxl) { // > 1400px
     height: 735px;
   }
 }
@@ -46,6 +46,7 @@
 .weddingCard {
   width: 100%;
   border-radius: 20px;
+  border: 1px solid black;
 }
 
 .verticalLine {
@@ -54,6 +55,16 @@
   background: black;
   margin: auto;
   margin-top: 20px;
+}
+
+.sectionText {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.5rem;
+}
+
+.thankYouText {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 45px;
 }
 
 .heading2Xl {

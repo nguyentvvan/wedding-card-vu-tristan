@@ -15,7 +15,7 @@ const data = {
 export default function OwnersInfo() {
 	return (
 		<div className={clsx("row", utilStyles.contentWrapper)}>
-			<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center mt-4">
+			<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center my-4">
 				<img className="w-100" src={getImageURL(data.namesImage)} alt='bride and groom' />
 			</div>
 

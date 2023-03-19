@@ -5,8 +5,13 @@
 }
 .loveStoryImage {
 	margin-bottom: 20px;
+	object-fit: contain;
 }
 .storyText {
 	display: flex;
 	align-items: center;
+}
+.verticalLine {
+  width: 100%;
+	max-width: 80px;
 }

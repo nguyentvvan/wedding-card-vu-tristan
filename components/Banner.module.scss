@@ -6,13 +6,13 @@
   overflow: hidden;
   position: relative;
   color: white;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(md) { // < 768px
     height: 350px;
   }
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(sm) { // < 576px
     height: 280px;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 400px) { // < 400px
     height: 200px;
   }
   .bannerImage {

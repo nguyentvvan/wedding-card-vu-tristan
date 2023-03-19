@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100;400&family=Noto+Sans+JP:wght@100&family=Questrial&display=swap');
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+@import 'base';
 
 html,
 body {
@@ -7,8 +9,20 @@ body {
   margin: 0;
   font-family: Questrial, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
   overflow-x: hidden;
+  font-size: 18px;
+  @include media-breakpoint-down(md) { // < 768px
+    font-size: 15px;
+  }
+  @include media-breakpoint-down(sm) { // < 576px
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(lg) { // > 992px
+    font-size: 21px;
+  }
+  @media (max-width: 400px) {
+    font-size: 15px;
+  }
 }
 
 * {
