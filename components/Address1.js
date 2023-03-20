@@ -22,7 +22,7 @@ export default function Address1() {
 			</div>
 			<div className={styles.mapouter}>
 				<div className={styles.gmapCanvas}>
-					<iframe title='Address' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=maison de charm quan 7&t=&z=12&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+					<iframe title='Address' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=maison de charm quan 7&t=&z=12&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
 				</div>
 			</div>
 		</div>

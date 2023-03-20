@@ -3,18 +3,23 @@ import utilStyles from '../styles/utils.module.scss';
 import clsx from 'clsx';
 
 export default function Actions() {
-	const scrollToBottom = () =>{
-    window.scrollTo({
-      top: document.body.scrollHeight, 
-      behavior: 'smooth'
-    });
+	const scrollToBankAccount = () =>{
+		const bankAccount = document.getElementById("bank-account");
+		
+		if (bankAccount) {
+			window.scrollTo({
+				top: bankAccount.getBoundingClientRect().bottom, 
+				behavior: 'smooth'
+			});
+		}
   };
 
 	const scrollToSendMessage = () => {
-		const messageForm = document.getElementById("message-form")
+		const messageForm = document.getElementById("button-send-message");
+		
 		if (messageForm) {
 			window.scrollTo({
-				top: messageForm.getBoundingClientRect().top, 
+				top: messageForm.getBoundingClientRect().bottom, 
 				behavior: 'smooth'
 			});
 		}
@@ -29,11 +34,11 @@ export default function Actions() {
 							<i className="fas fa-envelope"></i>&nbsp;
 							Gửi lời chúc
 						</button>
-						<button className={styles.actionButton}>
+						{/* <button className={styles.actionButton}>
 							<i className="fas fa-heart"></i>&nbsp;
 							Xác nhận tham dự
-						</button>
-						<button className={styles.actionButton} onClick={scrollToBottom}>
+						</button> */}
+						<button className={styles.actionButton} onClick={scrollToBankAccount}>
 							<i className="fas fa-gifts"></i>&nbsp;
 							Mừng cưới
 						</button>

@@ -6,10 +6,8 @@ import styles from './OwnersInfo.module.scss';
 
 const data = {
 	namesImage: 'names.png',
-	// groomImage: 'groom.png',
-	groomImage: 'quyen-1.png',
-	// brideImage: 'bride.png',
-	brideImage: 'tran-1.png',
+	groomImage: 'quyen.png',
+	brideImage: 'tran.png',
 	ring: 'rings.png',
 	bride: 'BẢO TRÂN',
 	groom: 'VĂN QUYỀN',
@@ -18,14 +16,9 @@ const data = {
 export default function OwnersInfo() {
 	return (
 		<div className={clsx("row", utilStyles.contentWrapper)}>
-			{/* <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center my-4">
+			<div className="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center my-4">
 				<img className="w-100" src={getImageURL(data.namesImage)} alt='bride and groom' />
-			</div> */}
-			<h4 className={clsx("fs-1 pt-4 pb-2 text-center", utilStyles.sectionText)}>
-				{data.groom}
-				<img className={styles.ringImage} src={getImageURL(data.ring)} alt="ring" />
-				{data.bride}
-			</h4>
+			</div>
 
 			<div className="row col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<div className="revealLeft col-xs-12 col-sm-6 col-md-6 col-lg-6">

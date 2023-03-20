@@ -18,8 +18,8 @@ export default function MessageForm() {
 			<h3 className={clsx("text-center my-3", utilStyles.sectionText)}>
 				Vài lời nhắn nhủ dễ thương
 			</h3>
-			<div id="message-form" className={clsx("row m-0", styles.loveMessages)}>
-				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+			<div className={clsx("row m-0", styles.loveMessages)}>
+				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 pb-3">
 					<form className={styles.messageSection}>
 						<div className="mb-3">
 							<label htmlFor="fullname" className="form-label">Họ tên của bạn</label>
@@ -33,12 +33,15 @@ export default function MessageForm() {
 							<label className="form-label" htmlFor="message">Lời chúc của bạn</label>
 							<textarea className="form-control" placeholder="Để lại lời chúc" id="message"></textarea>
 						</div>
-						<button type="submit" className={styles.messageButton}>Gửi lời chúc</button>
+						<button id="button-send-message" type="submit" className={styles.messageButton}>Gửi lời chúc</button>
 					</form>
 				</div>
 
-				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 pb-3">
 					<div className={styles.messageSection}>
+						<div className={styles.sentMessage}>
+							<strong>Van Nguyen: </strong>When you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible.
+						</div>
 						<div className={styles.sentMessage}>
 							<strong>Van Nguyen: </strong>When you realize you want to spend the rest of your life with somebody, you want the rest of your life to start as soon as possible.
 						</div>
