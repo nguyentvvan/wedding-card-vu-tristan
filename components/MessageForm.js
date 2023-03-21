@@ -124,7 +124,7 @@ function MessageForm({messages}) {
 
 				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 pb-3">
 					<div id="sent-message-list" className={styles.messageSection}>
-						{messages && messages.map((message) => 
+						{messages.map((message) => 
 						<div key={message.id} className={styles.sentMessage}>
 							<strong><span className="text-danger">{message.fullname}</span>: </strong>
 							{message.message}

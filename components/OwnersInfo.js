@@ -22,7 +22,7 @@ export default function OwnersInfo() {
 
 			<div className="row col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 				<div className="revealLeft col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<img className="w-75" src={getImageURL(data.groomImage)} alt='groom' />
+					<img className="w-100 w-md-75" src={getImageURL(data.groomImage)} alt='groom' />
 					<div className="px-4 py-3">
 						<small>ÚT NAM</small>
 						<div className={styles.ownerSharing}>
@@ -33,7 +33,7 @@ export default function OwnersInfo() {
 					</div>
 				</div>
 				<div className="revealRight col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<img className="w-75" src={getImageURL(data.brideImage)} alt='bride' />
+					<img className="w-100 w-md-75" src={getImageURL(data.brideImage)} alt='bride' />
 					<div className="px-4 py-3">
 						<small>THỨ NỮ</small>
 						<div className={styles.ownerSharing}>

@@ -6,7 +6,6 @@ import WeedingInfo from '../components/WeedingInfo';
 import OwnersInfo from '../components/OwnersInfo';
 import StoryList from '../components/StoryList';
 import GreatestMoments from '../components/GreatestMoments';
-import Events from '../components/Events';
 import Address from '../components/Address';
 import AccountInfo from '../components/AccountInfo';
 import Actions from '../components/Actions';

@@ -9,8 +9,7 @@ export const getAllMessages = function() {
 }
 
 export const storeMessage = function(message) {
-	const messages = data.messages;
-	messages.messages.push(message);
-	fs.writeFileSync('data/messages.json', JSON.stringify(messages, null, 4));
+	data.messages.push(message);
+	fs.writeFileSync('data/messages.json', JSON.stringify(data, null, 4));
 	return message;
 }
