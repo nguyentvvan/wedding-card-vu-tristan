@@ -6,9 +6,7 @@ import getImageURL from "../helpers/getImageURL";
 import utilStyles from '../styles/utils.module.scss';
 import styles from './MessageForm.module.scss';
 
-import data from '../data/messages';
-
-function MessageForm() {
+function MessageForm({messages}) {
 	const successAlertRef = useRef(null);
 	const sentMessageListRef = useRef(null);
 
@@ -30,6 +28,7 @@ function MessageForm() {
 				body: JSON.stringify(message),
 			}).then((response) => response.json()
 			).then((data) => {
+				renderNewMessage(message);
 				showAlert(true);
 				e.target.reset();
 			})
@@ -37,6 +36,19 @@ function MessageForm() {
 				console.error("Error:", error);
 			});
 		e.preventDefault();
+	};
+
+	const renderNewMessage = (message) => {
+		const list = document.getElementById("sent-message-list");
+		const newElement = document.createElement("div");
+		newElement.classList.add(styles.sentMessage);
+		newElement.innerHTML = `
+			<strong><span class="text-danger">${message.fullname}</span>: </strong>
+			${message.message}
+		`;
+		if (list) {
+			list.prepend(newElement);
+		}
 	};
 
 	const showAlert = (visible) => {
@@ -112,7 +124,7 @@ function MessageForm() {
 
 				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 pb-3">
 					<div id="sent-message-list" className={styles.messageSection}>
-						{data.messages.reverse().map((message) => 
+						{messages && messages.map((message) => 
 						<div key={message.id} className={styles.sentMessage}>
 							<strong><span className="text-danger">{message.fullname}</span>: </strong>
 							{message.message}

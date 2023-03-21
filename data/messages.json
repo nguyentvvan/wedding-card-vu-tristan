@@ -1,34 +1,3 @@
 {
-    "messages": [
-        {
-            "id": 1679328683808,
-            "fullname": "Vân Nguyễn",
-            "phone": "0938475887",
-            "message": "All the best for you guys"
-        },
-        {
-            "id": 1679328757536,
-            "fullname": "Nguyễn Thuỵ Vi Vân",
-            "phone": "sfdsw",
-            "message": "ahi hi"
-        },
-        {
-            "id": 1679328774659,
-            "fullname": "sdsad",
-            "phone": "2344",
-            "message": "dfsdf"
-        },
-        {
-            "id": 1679328822724,
-            "fullname": "Van Nguyen",
-            "phone": "2343",
-            "message": "sfsfsdfg"
-        },
-        {
-            "id": 1679330214921,
-            "fullname": "helo",
-            "phone": "",
-            "message": "sdf dsf"
-        }
-    ]
+    "messages": []
 }
