@@ -37,7 +37,7 @@ export default function StoryList() {
 			<div className="">
 				<div className="row my-4">
 					<div className="revealLeft col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage1)} alt='love story' />
+						<img className={clsx("w-100", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage1)} alt='love story' />
 					</div>
 					<div className="revealDown col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine1)} alt='love story' />
@@ -56,12 +56,12 @@ export default function StoryList() {
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine2)} alt='love story' />
 					</div>
 					<div className="revealRight order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage2)} alt='love story' />
+						<img className={clsx("w-100", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage2)} alt='love story' />
 					</div>
 				</div>
 				<div className="row my-3">
 					<div className="revealLeft col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage3)} alt='love story' />
+						<img className={clsx("w-100", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage3)} alt='love story' />
 					</div>
 					<div className="revealDown col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine3)} alt='love story' />
@@ -80,7 +80,7 @@ export default function StoryList() {
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine4)} alt='love story' />
 					</div>
 					<div className="revealRight order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={clsx("w-100 object-fit-cover", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage4)} alt='love story' />
+						<img className={clsx("w-100", styles.loveStoryImage)} src={getImageURL(data.loveStoryImage4)} alt='love story' />
 					</div>
 				</div>
 			</div>

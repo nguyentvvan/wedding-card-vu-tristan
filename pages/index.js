@@ -56,7 +56,7 @@ export default function Home({messages}) {
 				if (elementTop < windowHeight - elementVisible) {
 					revealElements[i].classList.add("active");
 				} else {
-					revealElements[i].classList.remove("active");
+					// revealElements[i].classList.remove("active");
 				}
 			}
 		}
