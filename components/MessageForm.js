@@ -86,7 +86,7 @@ function MessageForm({messages}) {
 				</div>
 
 				<div id="message-form" ref={sentMessageListRef} className="col-xs-12 col-sm-6 col-md-6 col-lg-6 pb-3">
-					<form onSubmit={submitHandler} action="" className={styles.messageSection}>
+					<form onSubmit={submitHandler} action="" className={clsx("revealLeft", styles.messageSection)}>
 						<div className="mb-3">
 							<label htmlFor="fullname" className="form-label">Họ tên của bạn <span className="text-danger">*</span></label>
 							<input
@@ -123,7 +123,7 @@ function MessageForm({messages}) {
 				</div>
 
 				<div className="col-xs-12 col-sm-6 col-md-6 col-lg-6 pb-3">
-					<div id="sent-message-list" className={styles.messageSection}>
+					<div id="sent-message-list" className={clsx("revealRight", styles.messageSection)}>
 						{messages.map((message) => 
 						<div key={message.id} className={styles.sentMessage}>
 							<strong><span className="text-danger">{message.fullname}</span>: </strong>
