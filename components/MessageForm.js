@@ -63,8 +63,8 @@ function MessageForm({messages}) {
 
 	return (
 		<div className="mt-5">
-			<div>
-				<img className="w-25 d-block m-auto" src={getImageURL('hearts.png')} alt='loves' />
+			<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center mx-auto my-4">
+				<img className="w-50" src={getImageURL('hearts.png')} alt='loves' />
 			</div>
 			<h3 className={clsx("text-center my-3", utilStyles.sectionText)}>
 				Vài lời nhắn nhủ dễ thương

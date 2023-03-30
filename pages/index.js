@@ -76,7 +76,7 @@ export default function Home({messages}) {
         <StoryList />
       </div>
       <div className={utilStyles.sectionBackground}>
-        {/* <GreatestMoments /> */}
+        <GreatestMoments />
         <Address />
         <MessageForm messages={messages} />
         <AccountInfo />

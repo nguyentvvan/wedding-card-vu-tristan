@@ -29,7 +29,7 @@ export default function StoryList() {
 	return (
 		<div className={clsx("row pb-5", utilStyles.contentWrapper)}>
 			<div className="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center my-4">
-				<img className="w-100" src={getImageURL(data.loveStoryImage)} alt='loves' />
+				<img className="w-50" src={getImageURL(data.loveStoryImage)} alt='loves' />
 			</div>
 			<h3 className={clsx("text-center", utilStyles.sectionText)}>
 				Câu Chuyện Tình Yêu
