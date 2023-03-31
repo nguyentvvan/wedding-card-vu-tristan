@@ -8,6 +8,8 @@ const data = {
 	// calendarImage: 'thursday.webp',
 	calendarImage: 'thursday-1.png',
 	groomBrideImage: 'groom-bride.png',
+	// maisonImage: 'maison-de-charme.png',
+	maisonImage: 'maison-de-charme.jpeg',
 };
 
 export default function Address() {
@@ -29,7 +31,7 @@ export default function Address() {
 			<div className={clsx("col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 mt-md-0")}>
 				<div className={clsx("revealRight d-flex flex-column", styles.addressSection)}>
 					<div className={clsx("d-flex", styles.schedule)}>
-						<div className="d-flex align-items-center">
+						{/* <div className="d-flex align-items-center">
 							<div>
 								<img className={styles.scheduleImage} src={getImageURL(data.groomBrideImage)} alt="groom bride" />
 							</div>
@@ -38,11 +40,12 @@ export default function Address() {
 							<div className="text-danger">18 GIỜ 00</div>
 							<div>Sảnh IRIS, Maison De Charme</div>
 							<div>793/57/16, Trần Xuân Soạn, Phường Tân Hưng, Quận 7</div>
-						</div>
+						</div> */}
+						<img className="" src={getImageURL(data.maisonImage)} alt="maison-de-charme" />
 					</div>
 					<div className={clsx("flex-grow-1", styles.mapouter)}>
 						<div className={styles.gmapCanvas}>
-							<iframe title='Address' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=maison de charm quan 7&t=&z=12&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
+							<iframe title='Maison De Charme' width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=maison de charm quan 7&t=&z=12&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe>
 						</div>
 					</div>
 				</div>
