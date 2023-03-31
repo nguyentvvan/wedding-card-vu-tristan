@@ -5,14 +5,14 @@ import utilStyles from '../styles/utils.module.scss';
 import styles from './GreatestMoments.module.scss';
 
 const images = [
-	'moments-portrait-1.jpg', // portrait
-	'moments-lanscape-1.jpg', // lanscape
-	'moments-lanscape-2.jpg', // lanscape
-	'moments-portrait-2.jpg', // portrait
-	'moments-portrait-3.jpg', // portrait
-	'moments-lanscape-3.jpg', // lanscape
-	'moments-lanscape-4.jpg', // lanscape
-	'moments-portrait-4.jpg', // portrait
+	'moments/moments-portrait-1.jpg', // portrait
+	'moments/moments-lanscape-1.jpg', // lanscape
+	'moments/moments-lanscape-2.jpg', // lanscape
+	'moments/moments-portrait-2.jpg', // portrait
+	'moments/moments-portrait-3.jpg', // portrait
+	'moments/moments-lanscape-3.jpg', // lanscape
+	'moments/moments-lanscape-4.jpg', // lanscape
+	'moments/moments-portrait-4.jpg', // portrait
 ];
 
 export default function GreatestMoments() {

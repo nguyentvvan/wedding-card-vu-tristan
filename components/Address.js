@@ -41,7 +41,7 @@ export default function Address() {
 							<div>Sảnh IRIS, Maison De Charme</div>
 							<div>793/57/16, Trần Xuân Soạn, Phường Tân Hưng, Quận 7</div>
 						</div> */}
-						<img className="" src={getImageURL(data.maisonImage)} alt="maison-de-charme" />
+						<img className="w-100" src={getImageURL(data.maisonImage)} alt="maison-de-charme" />
 					</div>
 					<div className={clsx("flex-grow-1", styles.mapouter)}>
 						<div className={styles.gmapCanvas}>
