@@ -79,7 +79,7 @@ export default function Home() {
       <div className={utilStyles.sectionBackground}>
         <GreatestMoments />
         <Address />
-        {/* <MessageForm /> */}
+        <MessageForm />
         <AccountInfo />
       </div>
     </Layout>
