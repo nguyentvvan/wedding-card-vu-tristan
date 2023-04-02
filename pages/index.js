@@ -13,19 +13,20 @@ import MessageForm from '../components/MessageForm';
 
 import utilStyles from '../styles/utils.module.scss';
 
-import { getAllMessages } from '../helpers/storeMessage';
+// import { getAllMessages } from '../helpers/storeMessage';
 
-export async function getServerSideProps({context}) {
-  const messages = getAllMessages();
+// export async function getServerSideProps({context}) {
+//   const messages = getAllMessages();
   
-  return {
-		props: {
-			messages
-		}
-  }
-}
+//   return {
+// 		props: {
+// 			messages
+// 		}
+//   }
+// }
 
-export default function Home({messages}) {
+// export default function Home({messages}) {
+export default function Home() {
   useEffect(() => {
 		function reveal() {
       const windowHeight = window.innerHeight;
@@ -78,7 +79,7 @@ export default function Home({messages}) {
       <div className={utilStyles.sectionBackground}>
         <GreatestMoments />
         <Address />
-        <MessageForm messages={messages} />
+        {/* <MessageForm /> */}
         <AccountInfo />
       </div>
     </Layout>

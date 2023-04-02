@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import clsx from "clsx";
 
 import getImageURL from "../helpers/getImageURL";
@@ -6,9 +6,36 @@ import getImageURL from "../helpers/getImageURL";
 import utilStyles from '../styles/utils.module.scss';
 import styles from './MessageForm.module.scss';
 
-function MessageForm({messages}) {
+function MessageForm() {
 	const successAlertRef = useRef(null);
 	const sentMessageListRef = useRef(null);
+	const [messages, setMessages] = useState([]);
+
+	useEffect(() => {
+		fetch(
+			// window.location.href + "/api/message",
+			"http://127.0.0.1:3001/addMessage",
+			{
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					"id": 123,
+					"fullname": "Iron man 1",
+					"phone": "0938475887",
+					"message": "All the best for you guys 1"
+			}),
+			}).then((response) => response.json()
+			).then((data) => {
+				// renderNewMessage(message);
+				// setMessages(data);
+				console.log(data);
+			})
+			.catch((error) => {
+				console.error("Error:", error);
+			});
+	}, []);
 
 	const submitHandler = (e) => {
 		const message = {
