@@ -18,8 +18,8 @@ export default function AccountInfo() {
 			<h3 className={clsx("text-center", utilStyles.sectionText)}>
 				Gửi lời chúc đến đôi uyên ương
 			</h3>
-			<img id="bank-account" className="revealDown" src={getImageURL(data.bankAccount)} alt='good bless' />
-			<h2 className={clsx("text-center", utilStyles.thankYouText)}>
+			<img className="revealDown" src={getImageURL(data.bankAccount)} alt='good bless' />
+			<h2 id="bank-account" className={clsx("text-center", utilStyles.thankYouText)}>
 				Thank you!
 			</h2>
 			<p className="text-center">Mong bạn sẽ đến chúc phúc cho chúng mình trong buổi lễ thành hôn sắp tới!</p>

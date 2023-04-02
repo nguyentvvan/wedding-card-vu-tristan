@@ -15,7 +15,7 @@ export default function Actions() {
   };
 
 	const scrollToSendMessage = () => {
-		const messageForm = document.getElementById("button-send-message");
+		const messageForm = document.getElementById("message-form");
 		
 		if (messageForm) {
 			window.scrollTo({
@@ -34,10 +34,13 @@ export default function Actions() {
 							<i className="fas fa-envelope"></i>&nbsp;
 							Gửi lời chúc
 						</button>
-						{/* <button className={styles.actionButton}>
+						<button
+							className={styles.actionButton}
+							onClick={scrollToSendMessage}
+						>
 							<i className="fas fa-heart"></i>&nbsp;
 							Xác nhận tham dự
-						</button> */}
+						</button>
 						<button className={styles.actionButton} onClick={scrollToBankAccount}>
 							<i className="fas fa-gifts"></i>&nbsp;
 							Mừng cưới
