@@ -34,7 +34,7 @@ export default function Layout({ children }) {
 						<Link href="/events">Events</Link>
 					</li>
 					<li className={router.pathname === "/loves" ? styles.activeNavItem : styles.navItem}>
-						<Link href="/love-quotes">Loves</Link>
+						<Link href="/loves">Loves</Link>
 					</li>
 				</ul>
 			</header>
