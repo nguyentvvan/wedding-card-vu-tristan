@@ -9,7 +9,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <link rel="icon" href="/icon.svg" />
+        <link rel="icon" href="/heart.svg" />
         <meta
           name="description"
           content="Wedding card Vu - Tristan"
@@ -17,20 +17,28 @@ export default function Layout({ children }) {
         <title>{siteTitle}</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
-        {/* <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100;400&family=Noto+Sans+JP:wght@100&family=Questrial&display=swap" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossoorigin="anonymous" referrerpolicy="no-referrer" /> */}
+        <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat&family=Dancing+Script&family=Great+Vibes&family=Indie+Flower&family=Inter:wght@100;400&family=Noto+Sans+JP:wght@100&family=Permanent+Marker&family=Questrial&display=swap" rel="stylesheet"></link>
+        {/* <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Great+Vibes&family=Indie+Flower&family=Inter:wght@100;400&family=Noto+Sans+JP:wght@100&family=Questrial&display=swap" rel="stylesheet"></link> */}
+        {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossoorigin="anonymous" referrerpolicy="no-referrer" /> */}
       </Head>
       <header className={styles.header}>
-				<ul>
-					<li>
+				<ul className={styles.nav}>
+					<li className={styles.navItem}>
 						<Link href="/">Invitation</Link>
 					</li>
-					<li>
+          <li className={styles.navItem}>
+						<Link href="/events">Events</Link>
+					</li>
+					<li className={styles.navItem}>
 						<Link href="/love-quotes">Love quotes</Link>
 					</li>
 				</ul>
 			</header>
-      <main>{children}</main>
+      <main>
+        <div>
+          {children}
+        </div>
+      </main>
       <footer className={styles.footer}></footer>
     </>
   );
