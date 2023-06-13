@@ -1,11 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from "next/router";
+import clsx from "clsx";
 
 const siteTitle = 'Vu - Tristan';
 
 import styles from './Layout.module.scss';
 
 export default function Layout({ children }) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -23,14 +27,14 @@ export default function Layout({ children }) {
       </Head>
       <header className={styles.header}>
 				<ul className={styles.nav}>
-					<li className={styles.navItem}>
+					<li className={router.pathname === "/" ? styles.activeNavItem : styles.navItem}>
 						<Link href="/">Invitation</Link>
 					</li>
-          <li className={styles.navItem}>
+          <li className={router.pathname === "/events" ? styles.activeNavItem : styles.navItem}>
 						<Link href="/events">Events</Link>
 					</li>
-					<li className={styles.navItem}>
-						<Link href="/love-quotes">Love quotes</Link>
+					<li className={router.pathname === "/loves" ? styles.activeNavItem : styles.navItem}>
+						<Link href="/love-quotes">Loves</Link>
 					</li>
 				</ul>
 			</header>
