@@ -3,19 +3,31 @@
 	height: 57px;
 	background: #413655;
 	color: rgba(184, 140, 158, 1);
+	position: fixed;
+	top: 10px;
 	.nav {
 		margin: 0 auto;
 		width: 400px;
 		display: flex;
 		justify-content: space-around;
 		line-height: 57px;
+		@media (max-width: 400px) { // < 400px
+			width: 100%;
+		}
 	}
 	.navItem {
 		width: 150px;
+		@media (max-width: 400px) { // < 400px
+			width: 33%;
+		}
 	}
 	.activeNavItem {
+		width: 150px;
 		color: white;
     font-size: 1.3rem;
+		@media (max-width: 400px) { // < 400px
+			width: 33%;
+		}
 	}
 }
 .footer {
@@ -23,5 +35,5 @@
   height: 30px;
 	width: 100%;
   position: fixed;
-  bottom: 0;
+  bottom: 10px;
 }

@@ -39,7 +39,7 @@ export default function Layout({ children }) {
 				</ul>
 			</header>
       <main>
-        <div>
+        <div className="py-5">
           {children}
         </div>
       </main>

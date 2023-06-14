@@ -8,6 +8,18 @@
 	margin: 0 auto;
 }
 
+.imageLine {
+  @media (max-width: 596px) { // < 596px
+    width: 400px;
+  }
+  @media (max-width: 400px) { // < 400px
+    width: 300px;
+  }
+  @media (max-width: 300px) { // < 300px
+    width: 200px;
+  }
+}
+
 /////////////
 /// 
 /// Events
