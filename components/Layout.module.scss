@@ -5,6 +5,7 @@
 	color: rgba(184, 140, 158, 1);
 	position: fixed;
 	top: 10px;
+	z-index: 999;
 	.nav {
 		margin: 0 auto;
 		width: 400px;
@@ -36,4 +37,5 @@
 	width: 100%;
   position: fixed;
   bottom: 10px;
+	z-index: 999;
 }

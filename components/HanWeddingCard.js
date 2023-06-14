@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.scss';
 export default function HanWeddingCard() {
 	return (
 		<>
-			<h3 className="pt-5">Einladung zur hochzeit von</h3>
+			<h3 className="pt-5">Einladung zur Hochzeit von</h3>
 			<img src={getImageURL("image.png")} className={utilStyles.imageLine} alt="line" />
 			<h2 className={utilStyles.greatText}>Vu</h2>
 			<h4>und</h4>
