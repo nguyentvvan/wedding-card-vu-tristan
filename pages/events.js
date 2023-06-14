@@ -9,7 +9,7 @@ import getImageURL from "../helpers/getImageURL";
 export default function Events() {
 	return (
 		<Layout>
-			<div className="p-3 d-sm-flex d-block m-auto justify-content-center">
+			<div className="pt-4 pb-3 d-sm-flex d-block m-auto justify-content-center">
 				<div className={utilStyles.greatText}>Vu</div>
 				<img src={getImageURL("butterfly.png")} className={utilStyles.butterflyImage} alt="line" />
 				<div className={utilStyles.greatText}>Tristan</div>

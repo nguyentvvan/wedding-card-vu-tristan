@@ -1,5 +1,13 @@
 @import 'base';
 
+.title {
+  padding-top: 30px;
+  font-size: 2rem;
+  @media (max-width: 300px) { // < 300px
+    padding-top: 80px;
+  }
+}
+
 .purpleLine {
 	background-color: #a176b5;
 	width: 50%;

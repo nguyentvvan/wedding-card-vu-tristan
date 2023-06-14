@@ -27,7 +27,8 @@ export default function StoryList() {
 				<h2 className={clsx("py-3", utilStyles.permanentMarkerText)}>Love quotes</h2>
 				<div className="row my-5 my-sm-3">
 					<div className="col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage1)} alt='love story' />
+						{/* <img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage1)} alt='love story' /> */}
+						<div className={clsx(styles.loveStoryImage, styles.loveStoryImage1)}></div>
 					</div>
 					<div className="col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine1)} alt='love story' />
@@ -38,35 +39,38 @@ export default function StoryList() {
 				</div>
 				<div className="row my-5 my-sm-3">
 					<div className={clsx(styles.storyText, "revealLeft order-3 order-sm-1 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center")}>
-						<div><i>{data.storyText2}</i></div>
+						<div><i>{data.storyText1}</i></div>
 					</div>
 					<div className="revealDown col-xs-0 order-2 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine2)} alt='love story' />
 					</div>
 					<div className="revealRight order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage2)} alt='love story' />
+						{/* <img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage2)} alt='love story' /> */}
+						<div className={clsx(styles.loveStoryImage, styles.loveStoryImage2)}></div>
 					</div>
 				</div>
 				<div className="row my-5 my-sm-3">
 					<div className="revealLeft col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage3)} alt='love story' />
+						{/* <img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage3)} alt='love story' /> */}
+						<div className={clsx(styles.loveStoryImage, styles.loveStoryImage3)}></div>
 					</div>
 					<div className="revealDown col-xs-0 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine3)} alt='love story' />
 					</div>
 					<div className={clsx(styles.storyText, "revealRight col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center")}>
-						<div><i>{data.storyText3}</i></div>
+						<div><i>{data.storyText1}</i></div>
 					</div>
 				</div>
 				<div className="row my-5 my-sm-3">
 					<div className={clsx(styles.storyText, "revealLeft order-3 order-sm-1 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex flex-column justify-content-center text-center")}>
-						<div><i>{data.storyText4}</i></div>
+						<div><i>{data.storyText1}</i></div>
 					</div>
 					<div className="revealDown col-xs-0 order-2 d-none d-sm-block col-sm-2 col-md-2 col-lg-2 text-center">
 						<img className={styles.verticalLine} src={getImageURL(data.verticalLine4)} alt='love story' />
 					</div>
 					<div className="revealRight order-1 order-sm-2 col-xs-12 col-sm-5 col-md-5 col-lg-5 d-flex justify-content-center">
-						<img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage4)} alt='love story' />
+						{/* <img className={styles.loveStoryImage} src={getImageURL(data.loveStoryImage4)} alt='love story' /> */}
+						<div className={clsx(styles.loveStoryImage, styles.loveStoryImage4)}></div>
 					</div>
 				</div>
 			</div>

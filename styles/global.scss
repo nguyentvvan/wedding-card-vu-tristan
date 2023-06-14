@@ -14,14 +14,14 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   font-size: 18px;
-  @include media-breakpoint-down(md) { // < 768px
-    font-size: 15px;
+  @include media-breakpoint-up(lg) { // > 992px
+    font-size: 22px;
   }
-  @include media-breakpoint-down(sm) { // < 576px
+  @include media-breakpoint-down(md) { // < 768px
     font-size: 20px;
   }
-  @include media-breakpoint-up(lg) { // > 992px
-    font-size: 21px;
+  @include media-breakpoint-down(sm) { // < 576px
+    font-size: 18px;
   }
   @media (max-width: 400px) {
     font-size: 15px;
